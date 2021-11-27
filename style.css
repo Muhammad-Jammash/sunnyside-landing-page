@@ -1,0 +1,197 @@
+@import url(https://fonts.googleapis.com/css?family=Fraunces:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+@import url(https://fonts.googleapis.com/css?family=Barlow:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
+:root{
+    --font-Barlow: 'Barlow', serif;
+    --font-Fraunces: 'Fraunces', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header img.header-img{
+    width: 100%;
+    margin-bottom: -4px;
+}
+header nav{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 40px;
+}
+header nav .logo-header img{
+    width: 180px;
+}
+header nav ul{
+    list-style: none;
+    display: flex;
+    gap: 45px;
+}
+header nav ul li{
+    padding-top: 9px;
+    font-size: 18px;
+}
+header nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-family: var(--font-Barlow);
+    font-weight: 500;
+}
+header nav ul button{
+    padding: 20px 30px;
+    margin-top: -8px;
+    font-weight: 700;
+    border-radius: 100px;
+    border: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-family: var(--font-Fraunces);
+}
+header nav ul button:hover{
+    background-color: hsl(200, 100%, 72%);
+    color: #fff;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+header h1.header-heading{
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%);
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-weight: 1000;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    font-size: clamp(1rem, 5vw, 3.3rem);
+    color: #fff;
+    font-family: var(--font-Fraunces);
+}
+header img.arrow-down{
+    position: absolute;
+    top: clamp(20%, 50%, 60%);
+    left: 50%;
+    transform: translate(-50%);
+}
+
+section main{
+    display: flex;
+    flex-wrap: wrap;
+}
+section main article.art-1, section main img.transform-img, section main img.standout-img, section main article.art-2, section main figure.graphic-design, section main figure.photography{
+    width: 50%;
+}
+section main figure.graphic-design img{
+    width: 100%;
+}
+section main figure.photography img{
+    width: 100%;
+}
+section main article.art-1 .art-1-contents, section main article.art-2 .art-2-contents{
+    position: relative;
+    top: 150px;
+    width: 80%;
+    left: 50%;
+    transform: translate(-50%);
+}
+section main article.art-1 .art-1-contents{
+    padding: 0 5% 0 10%;
+}
+section main article.art-2 .art-2-contents{
+    padding: 0 10% 0 5%;
+}
+section main article.art-1 .art-1-contents h1, section main article.art-2 .art-2-contents h1{
+    color: hsl(212, 27%, 19%);
+    width: 100%;
+    font-size: 2.5rem;
+    font-weight: 1000;
+    margin-bottom: 40px;
+    font-family: var(--font-Fraunces);
+}
+section main article.art-1 .art-1-contents p, section main article.art-2 .art-2-contents p{
+    font-size: 18px;
+    opacity: 0.5;
+    font-weight: 700;
+    font-family: 'Barlow', sans-serif;
+    letter-spacing: 0.3px;
+    margin-bottom: 40px;
+    line-height: 1.8rem;
+    font-family: var(--font-Barlow);
+}
+section main article.art-1 .art-1-contents button, section main article.art-2 .art-2-contents button{
+    background: transparent;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 1000;
+    cursor: pointer;
+    font-family: var(--font-Fraunces);
+}
+section main article.art-1 .art-1-contents button::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 11%;
+    right: 0;
+    height: 10px;
+    background: hsl(51, 100%, 49%);
+    z-index: -1;
+    opacity: 0.4;
+    width: 150px;
+    border-radius: 150px;
+}
+section main article.art-1 .art-1-contents button:hover::after{
+    opacity: 1;
+}
+section main article.art-2 .art-2-contents button::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 4.5%;
+    right: 0;
+    height: 10px;
+    background: hsl(7, 99%, 70%);
+    z-index: -1;
+    opacity: 0.4;
+    width: 150px;
+    border-radius: 150px;
+}
+section main article.art-2 .art-2-contents button:hover::after{
+    opacity: 1;
+}
+section main figure{
+    position: relative;
+}
+section main figure figcaption{
+    position: absolute;
+    width: 50%;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%);
+    text-align: center;
+}
+section main figure figcaption h2{
+    margin-bottom: 30px;
+    font-weight: 1000;
+    font-family: var(--font-Fraunces);
+}
+section main figure figcaption p{
+    font-family: var(--font-Barlow);
+    font-weight: 800;
+    line-height: 1.6rem;
+    opacity: 0.8;
+}
+section main figure.graphic-design figcaption{
+    color: hsl(167, 40%, 24%);
+}
+section main figure.photography figcaption{
+    color: hsl(198, 62%, 26%);
+}
