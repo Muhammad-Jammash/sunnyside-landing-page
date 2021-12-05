@@ -61,7 +61,7 @@ header nav ul button:hover{
 
 header h1.header-heading{
     position: absolute;
-    top: 25%;
+    top: 20%;
     left: 50%;
     transform: translate(-50%);
     width: 100%;
@@ -76,38 +76,38 @@ header h1.header-heading{
 }
 header img.arrow-down{
     position: absolute;
-    top: clamp(20%, 50%, 60%);
+    top: 35%;
     left: 50%;
     transform: translate(-50%);
 }
 
-section main{
+main section{
     display: flex;
     flex-wrap: wrap;
 }
-section main article.art-1, section main img.transform-img, section main img.standout-img, section main article.art-2, section main figure.graphic-design, section main figure.photography{
+main section article.art-1, main section img.transform-img, main section img.standout-img, main section article.art-2, main section figure.graphic-design, main section figure.photography{
     width: 50%;
 }
-section main figure.graphic-design img{
+main section figure.graphic-design img{
     width: 100%;
 }
-section main figure.photography img{
+main section figure.photography img{
     width: 100%;
 }
-section main article.art-1 .art-1-contents, section main article.art-2 .art-2-contents{
+main section article.art-1 .art-1-contents, main section article.art-2 .art-2-contents{
     position: relative;
-    top: 150px;
+    top: 24%;
     width: 80%;
     left: 50%;
     transform: translate(-50%);
 }
-section main article.art-1 .art-1-contents{
-    padding: 0 5% 0 10%;
+main section article.art-1 .art-1-contents{
+    padding: 0 4% 0 12%;
 }
-section main article.art-2 .art-2-contents{
-    padding: 0 10% 0 5%;
+main section article.art-2 .art-2-contents{
+    padding: 0 12% 0 4%;
 }
-section main article.art-1 .art-1-contents h1, section main article.art-2 .art-2-contents h1{
+main section article.art-1 .art-1-contents h1, main section article.art-2 .art-2-contents h1{
     color: hsl(212, 27%, 19%);
     width: 100%;
     font-size: 2.5rem;
@@ -115,7 +115,7 @@ section main article.art-1 .art-1-contents h1, section main article.art-2 .art-2
     margin-bottom: 40px;
     font-family: var(--font-Fraunces);
 }
-section main article.art-1 .art-1-contents p, section main article.art-2 .art-2-contents p{
+main section article.art-1 .art-1-contents p, main section article.art-2 .art-2-contents p{
     font-size: 18px;
     opacity: 0.5;
     font-weight: 700;
@@ -125,7 +125,7 @@ section main article.art-1 .art-1-contents p, section main article.art-2 .art-2-
     line-height: 1.8rem;
     font-family: var(--font-Barlow);
 }
-section main article.art-1 .art-1-contents button, section main article.art-2 .art-2-contents button{
+main section article.art-1 .art-1-contents button, main section article.art-2 .art-2-contents button{
     background: transparent;
     outline: none;
     border: none;
@@ -135,11 +135,11 @@ section main article.art-1 .art-1-contents button, section main article.art-2 .a
     cursor: pointer;
     font-family: var(--font-Fraunces);
 }
-section main article.art-1 .art-1-contents button::after{
+main section article.art-1 .art-1-contents button::after{
     content: '';
     position: absolute;
     bottom: 0;
-    left: 11%;
+    left: 13.3%;
     right: 0;
     height: 10px;
     background: hsl(51, 100%, 49%);
@@ -148,14 +148,15 @@ section main article.art-1 .art-1-contents button::after{
     width: 150px;
     border-radius: 150px;
 }
-section main article.art-1 .art-1-contents button:hover::after{
+main section article.art-1 .art-1-contents button:hover::after{
     opacity: 1;
+    transition: 0.3s ease;
 }
-section main article.art-2 .art-2-contents button::after{
+main section article.art-2 .art-2-contents button::after{
     content: '';
     position: absolute;
     bottom: 0;
-    left: 4.5%;
+    left: 3.2%;
     right: 0;
     height: 10px;
     background: hsl(7, 99%, 70%);
@@ -164,13 +165,14 @@ section main article.art-2 .art-2-contents button::after{
     width: 150px;
     border-radius: 150px;
 }
-section main article.art-2 .art-2-contents button:hover::after{
+main section article.art-2 .art-2-contents button:hover::after{
     opacity: 1;
+    transition: 0.3s ease;
 }
-section main figure{
+main section figure{
     position: relative;
 }
-section main figure figcaption{
+main section figure figcaption{
     position: absolute;
     width: 50%;
     top: 65%;
@@ -178,20 +180,117 @@ section main figure figcaption{
     transform: translate(-50%);
     text-align: center;
 }
-section main figure figcaption h2{
+main section figure figcaption h2{
     margin-bottom: 30px;
     font-weight: 1000;
     font-family: var(--font-Fraunces);
 }
-section main figure figcaption p{
+main section figure figcaption p{
     font-family: var(--font-Barlow);
     font-weight: 800;
     line-height: 1.6rem;
     opacity: 0.8;
 }
-section main figure.graphic-design figcaption{
+main section figure.graphic-design figcaption{
     color: hsl(167, 40%, 24%);
 }
-section main figure.photography figcaption{
+main section figure.photography figcaption{
     color: hsl(198, 62%, 26%);
+}
+
+section.testimonials{
+    text-align: center;
+}
+section.testimonials h2{
+    margin: 150px auto -20px auto;
+    font-family: var(--font-Fraunces);
+    letter-spacing: 0.4rem;
+    text-transform: uppercase;
+    font-weight: 1000;
+    font-size: 1.3rem;
+    opacity: 0.4;
+}
+section.testimonials main{
+    display: flex;
+    margin: 8%;
+}
+section.testimonials main article{
+    width: 80%;
+}
+section.testimonials main article img{
+    border-radius: 100%;
+    width: 80px;
+}
+section.testimonials main article p.main-para{
+    margin: 60px auto 80px auto;
+    width: 90%;
+    font-family: var(--font-Barlow);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.8rem;
+    opacity: 0.6;
+}
+section.testimonials main article h3{
+    font-weight: 1000;
+    margin-bottom: 15px;
+    font-family: var(--font-Fraunces);
+}
+section.testimonials main article p.client-designation{
+    opacity: 0.5;
+    font-family: var(--font-Barlow);
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+
+section.bottom-imgs img{
+    width: 25%;
+}
+
+footer{
+    background-color: hsl(167, 44%, 70%);
+}
+footer section{
+    text-align: center;
+}
+footer section svg.footer-logo{
+    margin: 60px auto 40px auto;
+}
+footer section svg.footer-logo path{
+    fill: hsl(166, 44%, 32%);
+}
+footer section ul.footer-links{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 80px;
+    gap: 60px;
+}
+footer section ul.footer-links li{
+    list-style: none;
+}
+footer section ul.footer-links li a{
+    text-decoration: none;
+    color: hsl(166, 44%, 32%);
+    font-family: var(--font-Barlow);
+    font-weight: 500;
+}
+footer section ul.footer-links li a:hover{
+    color: #fff;
+    transition: 0.3s ease;
+}
+
+footer section ul.social-icons{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding-bottom: 80px;
+}
+footer section ul.social-icons li{
+    list-style: none;
+}
+footer section ul.social-icons li a{
+    text-decoration: none;
+}
+footer section ul.social-icons li a svg path:hover{
+    fill: #fff;
+    transition: 0.3s ease;
 }
