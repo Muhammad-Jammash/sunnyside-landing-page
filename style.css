@@ -73,48 +73,13 @@ header nav img.hamburger {
   width: 25px;
   display: none;
 }
-
+header nav img.hamburger:hover {
+  cursor: pointer;
+}
 header section.mobile-menu {
-  position: absolute;
-  top: 15%;
-  left: 50%;
-  transform: translate(-50%);
-  width: 85%;
-  z-index: 2;
-  background-color: #fff;
   display: none;
+  visibility: hidden;
 }
-header section.mobile-menu::before {
-  content: "";
-  position: absolute;
-  left: 90.5%;
-  top: -10%;
-  width: 0;
-  height: 0;
-  border-bottom: 30px solid #fff;
-  border-left: 30px solid transparent;
-}
-header section.mobile-menu ul {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px;
-}
-header section.mobile-menu ul li {
-  list-style: none;
-  margin: 20px;
-}
-header section.mobile-menu ul li a {
-  text-decoration: none;
-  color: #000;
-  opacity: 0.8;
-  font-weight: 600;
-  font-family: var(--font-Barlow);
-}
-header section.mobile-menu button {
-  margin: 20px;
-}
-
 header h1.header-heading {
   position: absolute;
   top: 25%;
@@ -385,6 +350,64 @@ footer section ul.social-icons li a svg path:hover {
 }
 
 @media screen and (max-width: 768px) {
+  header nav {
+    padding: 30px;
+  }
+  header section.mobile-menu {
+    position: absolute;
+    top: 18%;
+    left: 50%;
+    transform: translate(-50%);
+    width: 85%;
+    z-index: 2;
+    background-color: #fff;
+    display: block;
+    visibility: visible;
+  }
+  header section.mobile-menu::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: -20px;
+    width: 0;
+    height: 0;
+    border-bottom: 30px solid #fff;
+    border-left: 30px solid transparent;
+  }
+  header section.mobile-menu ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  header section.mobile-menu ul li {
+    list-style: none;
+    margin: 16px;
+  }
+  header section.mobile-menu ul li a {
+    text-decoration: none;
+    color: #000;
+    opacity: 0.8;
+    font-weight: 600;
+    font-family: var(--font-Barlow);
+    font-weight: 700;
+    opacity: 0.5;
+  }
+  header section.mobile-menu ul li a:hover {
+    opacity: 1;
+  }
+  header section.mobile-menu button {
+    margin: 20px;
+    padding: 15px 20px;
+    background-color: hsl(51, 100%, 49%);
+    border: none;
+    border-radius: 50px;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-family: var(--font-Fraunces);
+    font-weight: 1000;
+    cursor: pointer;
+  }
   section.header-img {
     height: 500px;
   }
