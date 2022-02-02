@@ -78,7 +78,13 @@ header nav img.hamburger:hover {
 }
 header section.mobile-menu {
   display: none;
-  visibility: hidden;
+  position: absolute;
+  top: 18%;
+  left: 50%;
+  transform: translate(-50%);
+  width: 85%;
+  z-index: 2;
+  background-color: #fff;
 }
 header h1.header-heading {
   position: absolute;
@@ -353,16 +359,8 @@ footer section ul.social-icons li a svg path:hover {
   header nav {
     padding: 30px;
   }
-  header section.mobile-menu {
-    position: absolute;
-    top: 18%;
-    left: 50%;
-    transform: translate(-50%);
-    width: 85%;
-    z-index: 2;
-    background-color: #fff;
-    display: block;
-    visibility: visible;
+  .active {
+    display: block !important;
   }
   header section.mobile-menu::before {
     content: "";
@@ -497,7 +495,10 @@ footer section ul.social-icons li a svg path:hover {
   main section.first-section figure.photography {
     width: 100%;
   }
-  main section.first-section figure.graphic-design img.graphic-design-mobile-img,
+  main
+    section.first-section
+    figure.graphic-design
+    img.graphic-design-mobile-img,
   main section.first-section figure.photography img.photography-mobile-img {
     display: block;
     height: 580px;
@@ -520,58 +521,58 @@ footer section ul.social-icons li a svg path:hover {
     width: 100%;
   }
   main section.first-section article.art-1 .art-1-contents h1,
-main section.first-section article.art-2 .art-2-contents h1 {
-  font-size: 2.2rem;
-  margin-bottom: 25px;
-}
-main section.first-section article.art-1 .art-1-contents p,
-main section.first-section article.art-2 .art-2-contents p {
-  font-size: 18px;
-  width: 95%;
-  letter-spacing: 0px;
-  line-height: 1.8rem;
-  margin: 0 auto 20px auto;
-}
-main section.first-section article.art-1 .art-1-contents button,
-main section.first-section article.art-2 .art-2-contents button {
-  position: relative;
-  font-size: 18px;
-}
-main section.first-section article.art-1 .art-1-contents button::after,
-main section.first-section article.art-2 .art-2-contents button::after {
-  left: 50%;
-  bottom: 0;
-  transform: translate(-50%);
-  width: 150px;
-  height: 10px;
-}
+  main section.first-section article.art-2 .art-2-contents h1 {
+    font-size: 2.2rem;
+    margin-bottom: 25px;
+  }
+  main section.first-section article.art-1 .art-1-contents p,
+  main section.first-section article.art-2 .art-2-contents p {
+    font-size: 18px;
+    width: 95%;
+    letter-spacing: 0px;
+    line-height: 1.8rem;
+    margin: 0 auto 20px auto;
+  }
+  main section.first-section article.art-1 .art-1-contents button,
+  main section.first-section article.art-2 .art-2-contents button {
+    position: relative;
+    font-size: 18px;
+  }
+  main section.first-section article.art-1 .art-1-contents button::after,
+  main section.first-section article.art-2 .art-2-contents button::after {
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%);
+    width: 150px;
+    height: 10px;
+  }
 
-section.testimonials h2 {
-  font-size: 1rem;
-  letter-spacing: 4px;
-  font-weight: 1000;
-  margin: 60px auto 80px auto;
-}
-section.testimonials main {
-  flex-direction: column;
-  margin: 20px;
-}
-section.testimonials main article {
-  width: 100%;
-  margin-bottom: 20px;
-}
-section.testimonials main article p.main-para {
-  font-size: 18px;
-  line-height: 1.8rem;
-  width: 100%;
-}
-section.testimonials main article h3 {
-  font-size: 18px;
-  font-weight: 1000;
-}
-section.testimonials main article p.client-designation {
-  font-size: 16px;
-}
+  section.testimonials h2 {
+    font-size: 1rem;
+    letter-spacing: 4px;
+    font-weight: 1000;
+    margin: 60px auto 80px auto;
+  }
+  section.testimonials main {
+    flex-direction: column;
+    margin: 20px;
+  }
+  section.testimonials main article {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  section.testimonials main article p.main-para {
+    font-size: 18px;
+    line-height: 1.8rem;
+    width: 100%;
+  }
+  section.testimonials main article h3 {
+    font-size: 18px;
+    font-weight: 1000;
+  }
+  section.testimonials main article p.client-designation {
+    font-size: 16px;
+  }
 
   section.bottom-imgs {
     display: none;
