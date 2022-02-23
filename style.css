@@ -18,7 +18,7 @@ header {
 }
 
 section.header-img {
-  background-image: url("/images/desktop/image-header.jpg");
+  background-image: url("images/desktop/image-header.jpg");
   width: 100vw;
   height: 780px;
   background-size: 100% 100%;
