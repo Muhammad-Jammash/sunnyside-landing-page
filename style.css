@@ -36,6 +36,7 @@ header nav {
 header nav img.logo-header {
   width: 180px;
   height: 36px;
+  cursor: pointer;
 }
 header nav ul {
   list-style: none;
@@ -61,9 +62,11 @@ header nav ul button {
   font-size: 18px;
   text-transform: uppercase;
   font-family: var(--font-Fraunces);
+  background-color: rgba(255, 255, 255, 1);
+  transition: 0.3s ease-in-out;
 }
 header nav ul button:hover {
-  background-color: hsl(200, 100%, 72%);
+  background-color: rgba(255, 255, 255, 0.5);
   color: #fff;
   transition: 0.3s ease;
   cursor: pointer;
@@ -342,12 +345,33 @@ footer section ul.social-icons {
 footer section ul.social-icons li {
   list-style: none;
 }
-footer section ul.social-icons li a {
-  text-decoration: none;
+footer section ul.social-icons li a svg path {
+  transition: 0.3s ease-in-out;
 }
 footer section ul.social-icons li a svg path:hover {
   fill: #fff;
   transition: 0.3s ease;
+}
+.attribution {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  background-color: hsl(168, 34%, 41%);
+}
+.attribution p {
+  color: #fff;
+  font-weight: 600;
+  line-height: 1.5rem;
+}
+.attribution p a {
+  color: hsl(167, 40%, 24%);
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+}
+.attribution p a:hover {
+  color: #fff;
+  transition: 0.3s ease-in-out;
 }
 
 @media screen and (max-width: 1024px) {
