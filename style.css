@@ -107,7 +107,11 @@ header img.arrow-down {
   left: 50%;
   transform: translate(-50%);
 }
-
+main .wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0;
+}
 main section.first-section {
   display: flex;
   flex-wrap: wrap;
