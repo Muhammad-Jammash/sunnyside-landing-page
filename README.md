@@ -29,7 +29,7 @@ The screenshot of my project is attached above from which you can be recognized 
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Solution URL](https://www.frontendmentor.io/profile/Muhammad-Jammash/solutions)
 - Live Site URL: [Live site URL](https://sunnyside-landing-page-wine.vercel.app/)
 
 
